@@ -37,7 +37,6 @@ export const navLinks = [
 export const socialLinks = [
   { label: "GitHub", href: "https://github.com/Swalih-05", icon: Github },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/mohammedsaalihiali", icon: Linkedin },
-  { label: "Email", href: "mailto:mohammedsalihiali@gmail.com", icon: Mail }
 ];
 
 export const roles = [
