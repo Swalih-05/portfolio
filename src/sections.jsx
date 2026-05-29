@@ -180,20 +180,18 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.92, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.25 }}
-          className="relative mx-auto aspect-square w-full max-w-[470px]"
+          className="relative mx-auto aspect-square w-full max-w-[400px]"
         >
           <div className="absolute inset-0 animate-orbit rounded-full border border-cyan/15" />
           <div className="absolute inset-8 animate-pulseGlow rounded-full bg-gradient-to-br from-cyan/30 via-blue-500/10 to-violet/30 blur-2xl" />
           <div className="relative grid h-full place-items-center rounded-[2rem] border border-white/10 bg-slate-950/55 p-6 shadow-violet backdrop-blur-xl">
             <div className="absolute inset-4 rounded-[1.5rem] border border-cyan/15" />
-            <div className="relative grid aspect-square w-full place-items-center rounded-[1.5rem] bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.25),transparent_35%),linear-gradient(145deg,rgba(15,23,42,0.9),rgba(2,6,23,0.95))]">
-              <div className="text-center">
-                <div className="mx-auto grid h-32 w-32 place-items-center rounded-full border border-cyan/30 bg-cyan/10 text-5xl font-black text-cyan shadow-glow">
-                  MS
-                </div>
-                <p className="mt-5 font-mono text-sm uppercase tracking-[0.3em] text-slate-400">Profile Image</p>
-                <p className="mt-2 text-sm text-slate-500">Replace with a professional photo</p>
-              </div>
+            <div className="relative grid aspect-square w-full max-w-[330px] place-items-center overflow-hidden rounded-full border border-cyan/15 bg-slate-900">
+              <img
+                src="/profile2.jpeg"
+                alt="Mohammed Saalihi Ali"
+                className="h-[95%] w-[74%] object-contain object-center"
+              />
             </div>
           </div>
         </motion.div>
@@ -371,12 +369,8 @@ export function Strengths() {
           </motion.article>
         ))}
       </motion.div>
-      <div className="mt-10 overflow-hidden rounded-3xl border border-white/10 bg-slate-950/55 p-6 backdrop-blur-xl">
-        <div className="grid gap-5 lg:grid-cols-4">
-          {["Problem", "Flow", "Architecture", "Demo"].map((item, index) => (
+          {[].map((item, index) => (
             <div key={item} className="relative rounded-2xl border border-cyan/15 bg-white/[0.03] p-5">
-              <p className="font-mono text-xs text-cyan">Layer {index + 1}</p>
-              <p className="mt-2 font-bold text-white">{item}</p>
               <div className="mt-4 h-2 rounded-full bg-slate-800">
                 <motion.div
                   className="h-2 rounded-full bg-gradient-to-r from-cyan to-violet"
@@ -388,8 +382,6 @@ export function Strengths() {
               </div>
             </div>
           ))}
-        </div>
-      </div>
     </Section>
   );
 }
