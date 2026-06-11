@@ -711,8 +711,8 @@ export function Contact() {
             aria-hidden="true"
           />
           <div className="grid gap-5 md:grid-cols-2">
-            <FloatingInput label="Name" name="user_name" value={form.name} onChange={update} />
-            <FloatingInput label="Email" name="user_email" type="email" value={form.email} onChange={update} />
+            <FloatingInput label="Name" name="user_name" value={form.user_name} onChange={update} />
+            <FloatingInput label="Email" name="user_email" type="email" value={form.user_email} onChange={update} />
           </div>
           <FloatingInput label="Subject" name="subject" value={form.subject} onChange={update} />
           <label className="floating-field min-h-[180px]">
